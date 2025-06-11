@@ -1,0 +1,9 @@
+{
+  "name": "com.edge2chrome.launcher",
+  "description": "Edge2Chrome Native Host (Working Version)",
+  "path": "D:\\work\\Edge2Chrome\\edge2chrome_launcher_edge_fixed.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bekgmlladkakjohmhaekpmbiobcggpnb/"
+  ]
+}

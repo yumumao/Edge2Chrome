@@ -1,0 +1,9 @@
+{
+  "name": "com.edge2chrome.launcher",
+  "description": "Edge2Chrome Debug Native Host",
+  "path": "D:\\work\\Edge2Chrome\\debug_native.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bekgmlladkakjohmhaekpmbiobcggpnb/"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "com.edge2chrome.launcher",
+  "description": "Edge2Chrome Minimal Test",
+  "path": "D:\\work\\Edge2Chrome\\minimal_test.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bekgmlladkakjohmhaekpmbiobcggpnb/"
+  ]
+}

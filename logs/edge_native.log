@@ -1,0 +1,19 @@
+2025-06-10 22:30:28,746 - INFO - Edge2Chrome Native Host for Edge 启动
+2025-06-10 22:30:28,747 - INFO - Python: 3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]
+2025-06-10 22:30:28,747 - INFO - 工作目录: D:\work\Edge2Chrome
+2025-06-10 22:30:28,747 - INFO - 项目路径: D:\work\Edge2Chrome\
+2025-06-10 22:30:28,747 - INFO - 进入主循环
+2025-06-10 22:30:28,747 - DEBUG - 等待读取消息...
+2025-06-10 22:30:28,747 - DEBUG - 消息长度: 109
+2025-06-10 22:30:28,747 - DEBUG - 消息文本: {"url": "https://www.zhihu.com/test-custom-path", "source": "custom-path-test", "chromeArgs": "--new-window"}
+2025-06-10 22:30:28,748 - INFO - 收到消息: {'url': 'https://www.zhihu.com/test-custom-path', 'source': 'custom-path-test', 'chromeArgs': '--new-window'}
+2025-06-10 22:30:28,748 - INFO - 处理来自 custom-path-test 的请求: https://www.zhihu.com/test-custom-path
+2025-06-10 22:30:28,748 - INFO - 找到Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-10 22:30:28,748 - INFO - 执行命令: ['C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', '--new-window', 'https://www.zhihu.com/test-custom-path']
+2025-06-10 22:30:28,901 - INFO - Chrome启动成功, PID: 4032
+2025-06-10 22:30:28,902 - DEBUG - 发送消息: {'success': True, 'message': 'Chrome启动成功', 'url': 'https://www.zhihu.com/test-custom-path', 'pid': 4032, 'chrome_path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'}
+2025-06-10 22:30:28,902 - INFO - 消息发送成功，长度: 189
+2025-06-10 22:30:28,902 - DEBUG - 等待读取消息...
+2025-06-10 22:30:28,902 - INFO - 读取结束或长度数据不足
+2025-06-10 22:30:28,902 - INFO - 消息读取结束，退出
+2025-06-10 22:30:28,902 - INFO - 程序结束

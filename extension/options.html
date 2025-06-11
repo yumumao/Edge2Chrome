@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Edge2Chrome - 设置</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Edge2Chrome 设置</h1>
+        
+        <div class="section">
+            <h2>📝 URL匹配规则</h2>
+            <p class="description">
+                添加需要用Chrome打开的网址匹配规则。支持通配符：<br>
+                • <code>*</code> 匹配任意字符<br>
+                • <code>*.zhihu.*</code> 匹配所有知乎网址<br>
+                • <code>*github.com*</code> 匹配所有GitHub网址<br>
+                • <code>https://example.com/*</code> 匹配特定域名的所有页面
+            </p>
+            
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="例如: *.example.com*" />
+                <button id="addRule">添加规则</button>
+            </div>
+            
+            <div class="rules-container">
+                <h3>当前规则列表：</h3>
+                <ul id="rulesList"></ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ 其他设置</h2>
+            
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="showNotifications" />
+                    显示操作通知
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="enableLogging" />
+                    启用详细日志（用于调试）
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label>
+                    按钮显示文本：
+                    <input type="text" id="buttonText" placeholder="Chrome" maxlength="10" />
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <label>
+                    Chrome启动参数：
+                    <input type="text" id="chromeArgs" placeholder="--new-window" />
+                </label>
+                <small>多个参数用空格分隔，如：--new-window --incognito</small>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 预设规则模板</h2>
+            <div class="templates">
+                <button class="template-btn" data-rule="*.zhihu.*">知乎 (*.zhihu.*)</button>
+                <button class="template-btn" data-rule="*github.com*">GitHub (*github.com*)</button>
+                <button class="template-btn" data-rule="*stackoverflow.com*">Stack Overflow</button>
+                <button class="template-btn" data-rule="*youtube.com*">YouTube</button>
+                <button class="template-btn" data-rule="*reddit.com*">Reddit</button>
+                <button class="template-btn" data-rule="*twitter.com*">Twitter</button>
+                <button class="template-btn" data-rule="*bilibili.com*">哔哩哔哩</button>
+                <button class="template-btn" data-rule="*weibo.com*">微博</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="actions">
+                <button id="saveSettings" class="save-btn">💾 保存设置</button>
+                <button id="resetSettings" class="reset-btn">🔄 重置为默认</button>
+                <button id="exportSettings" class="export-btn">📤 导出配置</button>
+                <button id="importSettings" class="import-btn">📥 导入配置</button>
+            </div>
+            <input type="file" id="importFile" accept=".json" style="display: none;">
+        </div>
+
+        <div class="section">
+            <h2>📋 测试工具</h2>
+            <div class="test-section">
+                <input type="text" id="testUrl" placeholder="输入URL测试匹配规则，如：https://www.zhihu.com/question/123" />
+                <button id="testMatch">测试匹配</button>
+                <div id="testResult"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📖 使用说明</h2>
+            <div class="help-content">
+                <p><strong>安装步骤：</strong></p>
+                <ol>
+                    <li>运行 native-host/install_edge.py 安装本地通信程序</li>
+                    <li>在Edge中加载此扩展</li>
+                    <li>获取扩展ID并更新Native Host配置</li>
+                    <li>重启Edge浏览器</li>
+                </ol>
+                
+                <p><strong>故障排除：</strong></p>
+                <ul>
+                    <li>如果按钮点击无效，请检查Native Host是否正确安装</li>
+                    <li>确保Chrome浏览器已安装在默认位置</li>
+                    <li>查看开发者工具控制台的错误信息</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
